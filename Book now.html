@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>احجز الآن - منتجع البرتغال السياحي</title>
+    <link rel="stylesheet" href="booking-style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">منتجع البرتغال</div>
+            <ul>
+                <li><a href="home.html">الرئيسية</a></li>
+                <li><a href="Rooms.html">الغرف</a></li>
+                <li><a href="cafes.html">مقهى</a></li>
+                <li><a href="Restaurants.html">مطعم </a></li>
+                <li><a href="swimming.html">السباحة </a></li>
+                <li><a href="Firmness.html">الحزم </a></li>
+                <li><a href="Stadiums.html">ملاعب </a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section class="booking-form">
+        <h2>احجز إقامتك الآن</h2>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="name">الاسم الكامل:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">رقم الهاتف:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="arrival">تاريخ الوصول:</label>
+                <input type="date" id="arrival" name="arrival" required>
+            </div>
+            <div class="form-group">
+                <label for="departure">تاريخ المغادرة:</label>
+                <input type="date" id="departure" name="departure" required>
+            </div>
+            <div class="form-group">
+                <label for="roomType">نوع الغرفة:</label>
+                <select id="roomType" name="roomType" required>
+                    <option value="">اختر نوع الغرفة</option>
+                    <option value="single">غرفة مفردة</option>
+                    <option value="double">غرفة مزدوجة</option>
+                    <option value="suite">جناح فاخر</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">تأكيد الحجز</button>
+        </form>
+    </section>
+
+ 
+
+    <script src="booking-script.js"></script>
+</body>
+</html>
